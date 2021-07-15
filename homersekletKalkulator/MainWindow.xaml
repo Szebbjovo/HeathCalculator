@@ -1,0 +1,18 @@
+﻿<Window x:Class="homersekletKalkulator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:homersekletKalkulator"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox Name="celsius" HorizontalAlignment="Left" Margin="43,217,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBlock Name="HomwrsekletSzamitas" HorizontalAlignment="Left" Margin="224,72,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <Slider Name ="homersekletCelsius" HorizontalAlignment="Left" Margin="43,273,0,0" VerticalAlignment="Top" Width="120" ValueChanged="homersekletCelsius_ValueChanged"  Maximum="100" TickPlacement="BottomRight" TickFrequency="5" />
+        <TextBox Name ="farenheit"  HorizontalAlignment="Left" Margin="359,217,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Slider Name="homersekletFarenheit" HorizontalAlignment="Left" Margin="359,282,0,0" VerticalAlignment="Top" Width="120" Maximum="100" TickPlacement="BottomRight" TickFrequency="5" ValueChanged="homersekletFarenheit_ValueChanged"/>
+        <TextBox Name="CelsiusOutput" HorizontalAlignment="Left" Margin="43,169,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
+        <TextBox Name="FarenheitOutput" HorizontalAlignment="Left" Margin="359,169,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+    </Grid>
+</Window>
